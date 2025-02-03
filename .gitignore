@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/renpy
-# Edit at https://www.toptal.com/developers/gitignore?templates=renpy
-
 ### Renpy ###
 # Don't track content of these folders #
 ########################################
@@ -28,4 +25,4 @@ errors.txt
 traceback.txt
 files.txt
 
-# End of https://www.toptal.com/developers/gitignore/api/renpy
+.vscode/
