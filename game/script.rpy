@@ -13,7 +13,7 @@ label start:
 
     show eileen happy
 
-    e "You've created a new Ren'Py game."
+    e "Well met! So, you want to be an adventurer? Go to the Guild for your first quest."
 
     return
 
@@ -53,3 +53,21 @@ label armorer:
 
     "The shop has rebuffs offers from the Slime Armor producers for a while. They want to buy out the competition. It may be more expensive
     but the shopkeep offers repairs in perpetuity. It may be worth it to save up at a lest exciting job."
+
+label sewer_entrance:
+
+    scene alleyway
+
+    "Are you prepared to face the threat? This is your last chance to acquire armor."
+
+label rats:
+
+    scene sewer
+
+    "You encounter enemies! Fight these rats!"
+
+label boss:
+    
+    scene boss shadowed
+
+    "You've finally reached your bounty! The powerful enemy that has felled a dozen unprepared adventurers. Will you share their fate?"
