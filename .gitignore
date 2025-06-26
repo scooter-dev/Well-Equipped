@@ -26,3 +26,4 @@ traceback.txt
 files.txt
 
 .vscode/
+*.repy.py
