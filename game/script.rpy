@@ -27,7 +27,7 @@ label guild:
     if new_adventurer:
         g "Welcome to the Adventurer's Guild! I see you're new here. Are you ready to embark on your first quest?"
 
-    if(armor_list is empty):
+    if(len(armor_list) == 0):
         g "So you want to go on your first quest? You'll need some good armor."
 
         menu:
@@ -56,6 +56,7 @@ label choose_armor:
             menu:
                 "Yes":
                     $ selected_armor = "Slime Armor"
+                    jump sewer_entrance
                 "No": 
                     return
         "Finely Crafted Armor":
@@ -64,6 +65,7 @@ label choose_armor:
             menu:
                 "Yes":
                     $ selected_armor = "Finely Crafted Armor"
+                    jump sewer_entrance
                 "No":
                     return
         "Upcycled Armor":
@@ -72,6 +74,7 @@ label choose_armor:
             menu:
                 "Yes":
                     $ selected_armor = "Upcycled Armor"
+                    jump sewer_entrance
                 "No":
                     return
         "Come Back Later":
