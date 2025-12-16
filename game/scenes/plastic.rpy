@@ -13,5 +13,5 @@ label slime:
 
     "As you inspect the armor, you percieve that it has a couple advantages. However, it seems a bit flimsy."
 
-    $ armor_list.append("slime")
+    $ armor_data["Slime Armor"]["available"] = True
     jump guild
