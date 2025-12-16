@@ -87,9 +87,9 @@ label town_square:
         "Armor Shop":
             jump armorer
         "Bright Shiny Store":
-            jump slime
+            jump slime_store
         "...Alleyway?":
-            jump garbage
+            jump upcycle
         "Pie Stand":
             "You decide to take a break and enjoy a delicious pie from the pie stand. It's a nice way to relax before your adventure."
 
