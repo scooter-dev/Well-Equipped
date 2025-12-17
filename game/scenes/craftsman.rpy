@@ -41,5 +41,5 @@ label mini_game:
 label success_fine_armor:
     
     "Great work! You persisted through some menial tasks and earned for the finely crafted armor. "
-    $ armor_list.append("fine")
-    jump guild_equipped
+    $ armor_data["Finely Crafted Armor"]["available"] = True
+    jump guild

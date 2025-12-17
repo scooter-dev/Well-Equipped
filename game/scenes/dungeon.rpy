@@ -1,3 +1,11 @@
+label sewer_entrance:
+
+    scene alleyway
+
+    "With you armor selected, you make your way to the sewer entrance. The air is damp and the smell is... well, it's a sewer."
+
+    jump rats
+
 label rats:
 
     scene sewer
@@ -8,21 +16,28 @@ label rats:
 
 label puzzle:
 
-    "Ther is one more challenge in between you and the horrible creature. A classic puzzle for an aspiring adventurer. Not a phiscal one like the rats."
+    "There is one more challenge in between you and the horrible creature. A classic puzzle for an aspiring adventurer. Not a phiscal one like the rats."
 
     "This is a test of the mind! Arguably this is more important than your choice of armor. Even one who dons (spelling?) less fortified armor can face great challenges."
 
     # puzzle here
 
-    jump boss
+    jump dungeon_pressure_puzzle
 
 label boss:
     
     scene boss shadowed
 
     "You've finally reached your bounty! The powerful enemy that has felled a dozen unprepared adventurers. Will you share their fate?"
-
-# jump based on choice of armor
+    if armor_data["Slime Armor"]["equipped"]:
+        jump fight_slime_armor
+    elif armor_data["Finely Crafted Armor"]["equipped"]:
+        jump finely_crafted_armor
+    elif armor_data["Upcycled Armor"]["equipped"]:
+        jump upcycled_armor
+    else:
+        "You forgot to choose your armor! You feel unprepared and vulnerable."
+        jump defeat
 
 label fight_slime_armor:
     "You boldly enter the cavern equipped with slime armor. You feel a little silly in this armor as you see all the destroyed slime armor around the room."
@@ -59,7 +74,7 @@ label defeat:
     "Do you want to try again or return to the adventurer's guild to prepare better?"
     menu:
         "Try Again":
-            jump fight_boss
+            jump boss
         "Return to Guild":
             jump repeat_guild
 
