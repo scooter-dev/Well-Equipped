@@ -26,3 +26,4 @@ traceback.txt
 files.txt
 
 .vscode/
+game/renpy_warp_**.rpe.py
