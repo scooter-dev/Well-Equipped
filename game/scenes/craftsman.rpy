@@ -17,6 +17,7 @@ label armorer:
     
     jump farming_gold
 
+# What money making paths are there? Is this the same as the pie thing?
 label farming_gold:
 
     "It's time to get your hands dirty with some menial tasks. This might not be your passion, but it will be worth it. And hey, maybe you'll enjoy the work."
@@ -41,5 +42,5 @@ label mini_game:
 label success_fine_armor:
     
     "Great work! You persisted through some menial tasks and earned for the finely crafted armor. "
-    $ armor_data["Finely Crafted Armor"]["available"] = True
+    $ armor_data["finely_crafted_armor"]["available"] = True
     jump guild

@@ -25,5 +25,5 @@ label boom_workshop:
 
     "Bada Boom shows you how to clean and repair the armor. You work together to patch it up, and soon it looks as good as new."
 
-    $ armor_data["Upcycled Armor"]["available"] = True
+    $ armor_data["upcycled_armor"]["available"] = True
     jump guild

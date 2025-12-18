@@ -4,11 +4,11 @@ label boss:
 
     "You've finally reached your bounty! The powerful enemy that has felled a dozen unprepared adventurers. Will you share their fate?"
     
-    if armor_data["Slime Armor"]["equipped"]:
+    if equipment == "slime_armor":
         jump fight_slime_armor
-    elif armor_data["Finely Crafted Armor"]["equipped"]:
+    elif equipment == "finely_crafted_armor":
         jump finely_crafted_armor
-    elif armor_data["Upcycled Armor"]["equipped"]:
+    elif equipment == "upcycled_armor":
         jump upcycled_armor
     else:
         "You forgot to choose your armor! You feel unprepared and vulnerable."

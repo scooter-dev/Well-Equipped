@@ -45,31 +45,34 @@ label choose_armor:
     "Before you leave, you need to choose your armor. Each type of armor has its own advantages and disadvantages."
 
     menu:
-        "Slime Armor" if armor_data["Slime Armor"]["available"]:
-            g "Ah, I see you've chosen the slime armor. An... interesting choice. I hope you're ready for a slippery challenge!"
+        "Slime Armor" if armor_data["slime_armor"]["available"]:
+            g "Slime armor, huh? It's cheap and readily available, but don't expect it to last long."
             "Confirm your choice of slime armor?"
             menu:
                 "Yes":
-                    $ armor_data["Slime Armor"]["equipped"] = True
+                    $ equipment = "slime_armor"
                     jump sewer_entrance
                 "No": 
                     jump choose_armor
-        "Finely Crafted Armor" if armor_data["Finely Crafted Armor"]["available"]:
+        "Finely Crafted Armor" if armor_data["finely_crafted_armor"]["available"]:
             g "Ah, the armorer's finest work. A wise choice!"
             "Confirm your choice of finely crafted armor?"
             menu:
                 "Yes":
-                    $ armor_data["Finely Crafted Armor"]["equipped"] = True
+                    $ equipment = "finely_crafted_armor"
                     jump sewer_entrance
                 "No":
                     jump choose_armor
-        "Upcycled Armor" if armor_data["Upcycled Armor"]["available"]:
+        "Upcycled Armor" if armor_data["upcycled_armor"]["available"]:
             g "Ah, the upcycled armor. A unique choice, but it has its merits."
             "Confirm your choice of upcycled armor?"
             menu:
                 "Yes":
-                    $ armor_data["Upcycled Armor"]["equipped"] = True
+                    $ equipment = "upcycled_armor"
                     jump sewer_entrance
+                "No":
+                    jump choose_armor
+
                 "No":
                     jump choose_armor
         "Come Back Later":

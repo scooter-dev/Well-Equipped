@@ -13,5 +13,5 @@ label slime_store:
 
     "As you inspect the armor, you percieve that it has a couple advantages. However, it seems a bit flimsy."
 
-    $ armor_data["Slime Armor"]["available"] = True
+    $ armor_data["slime_armor"]["available"] = True
     jump guild
