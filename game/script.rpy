@@ -53,7 +53,7 @@ label choose_armor:
                     $ armor_data["Slime Armor"]["equipped"] = True
                     jump sewer_entrance
                 "No": 
-                    return
+                    jump choose_armor
         "Finely Crafted Armor" if armor_data["Finely Crafted Armor"]["available"]:
             g "Ah, the armorer's finest work. A wise choice!"
             "Confirm your choice of finely crafted armor?"
@@ -62,7 +62,7 @@ label choose_armor:
                     $ armor_data["Finely Crafted Armor"]["equipped"] = True
                     jump sewer_entrance
                 "No":
-                    return
+                    jump choose_armor
         "Upcycled Armor" if armor_data["Upcycled Armor"]["available"]:
             g "Ah, the upcycled armor. A unique choice, but it has its merits."
             "Confirm your choice of upcycled armor?"
@@ -71,7 +71,7 @@ label choose_armor:
                     $ armor_data["Upcycled Armor"]["equipped"] = True
                     jump sewer_entrance
                 "No":
-                    return
+                    jump choose_armor
         "Come Back Later":
             "You decide to come back later when you have more information or resources."
             jump town_square
@@ -89,7 +89,7 @@ label town_square:
         "Bright Shiny Store":
             jump slime_store
         "...Alleyway?":
-            jump upcycle
+            jump garbage
         "Pie Stand":
             "You decide to take a break and enjoy a delicious pie from the pie stand. It's a nice way to relax before your adventure."
 

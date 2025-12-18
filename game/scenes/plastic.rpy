@@ -1,4 +1,4 @@
-label slime:
+label slime_store:
 
     scene slime armor store
 
