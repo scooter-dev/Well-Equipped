@@ -4,8 +4,7 @@ label slime_store:
 
     "You enter the brightly lit store, filled with colorful displays of slime armor. The walls are adorned with posters showcasing the latest slime armor designs."
 
-    "Slime armor gained popularity because I mimicked noble's glass armor. Its transparent quality also
-    allows for vain adventurers to show off their outfits."
+    "Slime armor gained popularity because I mimicked noble's glass armor. Its transparent quality also allows for vain adventurers to show off their outfits."
 
     show store clerk
 

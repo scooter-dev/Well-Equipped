@@ -4,14 +4,14 @@ label armorer:
 
     show craftsman
 
-    "The shop has rebuffs offers from the Slime Armor producers for a while. They want to buy out the competition."
-    "It may be more expensive than slime but the shopkeep offers repairs in perpetuity. It may be worth grinding for."
+    "The shop has rebuffed offers from the Slime Armor producers for a while. They want to buy out the competition."
+    "It may be more expensive than slime but the shopkeeper offers repairs in perpetuity. It may be worth grinding for."
 
     a "Ey? A customer! Welcome to me shop. I see you're an adventurer. A bit green you are. HEH HEH HOO! I only craft the finest armor."
     
     a "I have a limited stock because I put care into each piece."
 
-    "The armor that you inspect are finely crafted indeed. However, they are a pricey. Don't be discouraged! It is time for the legendary tradition of all adventurers."
+    "The armor that you inspect are finely crafted indeed. However, they are pricey. Don't be discouraged! It is time for the legendary tradition of all adventurers."
 
     "It's time to grind for gold! Also know as farming for gold by some."
     
