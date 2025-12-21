@@ -32,12 +32,7 @@ label mini_game:
 
     "Instructions for the mini game: Press blah for blah"
 
-    menu:
-        "Win?":
-            "yuh"
-            jump success_fine_armor
-        "Lose?":
-            "oh no"
+    jump success_fine_armor
 
 label success_fine_armor:
     

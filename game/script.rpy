@@ -96,6 +96,7 @@ label town_square:
             "You decide to take a break and enjoy a delicious pie from the pie stand. It's a nice way to relax before your adventure."
 
 label repeat_guild:
+    scene bg town_square
 
     "You find yourself back at the adventurer's guild at the beginning of your path."
 

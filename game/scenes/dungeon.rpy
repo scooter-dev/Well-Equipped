@@ -9,8 +9,3 @@ label sewer_entrance:
 label dungeon_main:
     "You descend into the sewer system. The dark tunnels echo with dripping water and distant sounds of movement."
     jump sewer_maze
-
-label sewer_maze:
-    "This is a test of the mind! Arguably this is more important than your choice of armor. Even one who dons (spelling?) less fortified armor can face great challenges."
-
-    jump boss
