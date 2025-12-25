@@ -4,7 +4,7 @@
 A Ren'Py visual novel RPG exploring equipment acquisition approaches through three distinct armor paths. You start as a novice adventurer tasked with defeating a horrible monster.
 
 **Core Themes:**
-- Fast fashion vs. sustainable alternatives
+- Textile Sustainability
 - Value of craftsmanship
 - Consumer culture commentary
 - Responsible consumption when fast fashion is the only option

@@ -2,7 +2,10 @@ define e = Character("Eileen")
 define g = Character("Guild Leader")
 define s = Character("Shopkeeper")
 define b = Character("Bada Boom")
-define a = Character("Armorer")
+include "data/characters.rpy"
+include "data/enemies.rpy"
+include "data/player.rpy"
+include "data/combat.rpy"
 
 default new_adventurer = True
 default available_armors = []
