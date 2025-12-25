@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -31,6 +31,38 @@ style button:
 style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
+
+style combat_hbox is hbox
+style combat_button is button
+style combat_button_text is button_text
+
+style combat_hbox:
+    xalign 0.5
+    ypos 0.8
+    yanchor 0.5
+    spacing 20
+    background Composite((450, 60), (0,0), Solid("#fff"), (2,2), Solid("#333"))
+    padding (10, 10)
+
+style combat_button:
+    xminimum 200
+    yminimum 50
+    background None
+    hover_background Solid("#5558")
+    size_group "combat"
+
+style combat_button_text:
+    properties gui.text_properties("choice_button")
+    color "#fff"
+
+style combat_window:
+    xalign 0.5
+    xfill False
+    xsize int(0.75 * config.screen_width)
+    yalign 1.0
+    ysize gui.textbox_height
+
+    background Composite((int(0.75 * config.screen_width), gui.textbox_height), (0,0), Solid("#fff"), (2,2), Solid("#333"))
 
 
 style label_text is gui_text:
@@ -131,11 +163,12 @@ style namebox_label is say_label
 
 style window:
     xalign 0.5
-    xfill True
+    xfill False
+    xsize int(0.75 * config.screen_width)
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Composite((int(0.75 * config.screen_width), gui.textbox_height), (0,0), Solid("#fff"), (2,2), Solid("#333"))
 
 style namebox:
     xpos gui.name_xpos
@@ -155,8 +188,8 @@ style say_label:
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
-    xpos gui.dialogue_xpos
-    xsize gui.dialogue_width
+    xalign 0.5
+    xsize int(0.7 * config.screen_width)
     ypos gui.dialogue_ypos
 
     adjust_spacing False
@@ -222,6 +255,33 @@ style choice_vbox:
     yanchor 0.5
 
     spacing gui.choice_spacing
+
+## Combat status screen
+screen combat_status():
+    frame:
+        xalign 0.0
+        yalign 0.0
+        background "#0008"
+        padding (10, 10)
+
+        vbox:
+            text "Player HP: [player_hp]/[player_max_hp]" color "#fff"
+            text "Enemy: [enemy_name] HP: [enemy_hp]/[enemy_max_hp]" color "#fff"
+
+## Combat menu screen (JRPG-style)
+screen combat_menu(items):
+    style_prefix "combat"
+
+    window:
+        style "combat_window"
+
+        hbox:
+            xalign 0.5
+            yalign 0.5
+            spacing 20
+
+            for caption, action in items:
+                textbutton caption action action
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
