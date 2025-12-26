@@ -26,7 +26,7 @@ label farming_gold:
 
     "It's time for work!"
 
-    jump mini_game
+    jump bar_minigame
 
 label mini_game:
 
